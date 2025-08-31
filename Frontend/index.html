@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anti-India Campaign Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Anti-India Campaign Dashboard</h1>
+    <div class="dashboard">
+
+      <!-- Left Panel: Logs -->
+      <div class="left-panel">
+        <h2>Real-time Activity</h2>
+        <div class="log-box" id="logBox"></div>
+      </div>
+
+      <!-- Right Panel: Charts -->
+      <div class="right-panel">
+
+        <!-- Top: Pie Chart + Counters -->
+        <div class="chart-top">
+          <canvas id="pieChart" width="250" height="250"></canvas>
+          <div class="counters">
+            <div class="counter safe">Safe: <span id="safeCount">0</span></div>
+            <div class="counter suspicious">Suspicious: <span id="suspiciousCount">0</span></div>
+            <div class="counter neutral">Neutral: <span id="neutralCount">0</span></div>
+          </div>
+        </div>
+
+        <!-- Bottom: Bar Chart + Platform Counts -->
+        <div class="chart-card">
+          <canvas id="barChart" width="500" height="200"></canvas>
+          <div id="platformCounts" class="platform-counts"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
